@@ -801,7 +801,7 @@ int lua_pluginx_protocols_FacebookAgent_login(lua_State* tolua_S)
 #if COCOS2D_DEBUG >= 1
             if (!toluafix_isfunction(tolua_S,3,"LUA_FUNCTION",0,&tolua_err))
                 ok = false;
-#end
+#endif
             if (!ok) { break; }
             
             LUA_FUNCTION handler = toluafix_ref_function(tolua_S, 3, 0);
